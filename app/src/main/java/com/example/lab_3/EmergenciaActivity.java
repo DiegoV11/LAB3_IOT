@@ -27,6 +27,7 @@ public class EmergenciaActivity extends AppCompatActivity {
 
     ActivityResultLauncher<String[]> requestPermissonForLocation;
     String apiKey="AIzaSyBrOhsgBaVz5JA34sWBKc1uEw4c80IUXg8";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
