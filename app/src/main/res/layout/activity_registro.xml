@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName|phone"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/spinner_genero_mascota"
         app:layout_constraintHorizontal_bias="0.0"
@@ -98,8 +98,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="@+id/editText_dni_dueño"
+        app:layout_constraintStart_toStartOf="@+id/editText_dni_dueño"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
 
     <Spinner
@@ -117,6 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="96dp"
+        android:onClick="crearMascota"
         android:text="Registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +125,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editText_dni_dueño"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
