@@ -1,19 +1,27 @@
 package com.example.lab_3;
 
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
+import android.os.Bundle;
+import android.util.Log;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.os.Bundle;
-import android.util.Log;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
 
 public class EmergenciaActivity extends AppCompatActivity {
 
-    ActivityResultLauncher<String[]> requestPermissonForLocation
-
+    ActivityResultLauncher<String[]> requestPermissonForLocation;
+    String apiKey="AIzaSyBrOhsgBaVz5JA34sWBKc1uEw4c80IUXg8";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +37,37 @@ public class EmergenciaActivity extends AppCompatActivity {
                         Log.d("msg", "Permiso de ubicación aproximada concedido");
                     } else {
                         Log.d("msg", "Ningun permiso concedido");
-                    }
-                }
+                    }                }
         );
+
+        ConnectivityManager connMgr =(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        boolean isConnected = false;
+
+        for (Network network : connMgr.getAllNetworks()){
+            NetworkInfo networkInfo = connMgr.getNetworkInfo(network);
+            if(networkInfo.isConnected()){
+                isConnected=true;
+            }
+        }
+
+
+
+        if(isConnected){
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+
+            String urlBase="https://maps.googleapis.com/maps/api/directions/json?";
+            String destination = "destination=-12.018455013033748,%20-77.07418594311918";
+            String origin = "&origin=-12.069371120633317,%20-77.08219146486309";
+            String key = "&key="+apiKey;
+
+
+
+
+
+
+
+
+        }
     }
 
     public void mostrarUbicacion() {
