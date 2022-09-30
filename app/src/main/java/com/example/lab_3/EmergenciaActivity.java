@@ -12,7 +12,7 @@ import android.util.Log;
 
 public class EmergenciaActivity extends AppCompatActivity {
 
-    ActivityResultLauncher<String[]> requestPermissonForLocation
+    ActivityResultLauncher<String[]> requestPermissonForLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
