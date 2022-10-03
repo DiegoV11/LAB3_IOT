@@ -33,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:onClick="irHistorial"
         android:text="Historial"
         app:layout_constraintEnd_toEndOf="@+id/btn_emergencia"
         app:layout_constraintStart_toStartOf="@+id/btn_emergencia"
