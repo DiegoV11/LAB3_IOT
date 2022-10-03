@@ -18,5 +18,11 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, 1);
     }
 
+    public void irHistorial(View view){
+        Intent intent = new Intent(MainActivity.this, Historial.class);
+        startActivityForResult(intent, 1);
+    }
+
+
 
 }

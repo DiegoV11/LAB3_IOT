@@ -46,7 +46,7 @@ public class HistorialAdapter extends RecyclerView.Adapter<HistorialAdapter.Masc
         tvDueño.setText(mascota.getDueño());
 
         TextView tvDni = holder.itemView.findViewById(R.id.textViewDni);
-        tvDni.setText(mascota.getDni());
+        tvDni.setText(String.valueOf(mascota.getDni()));
 
         TextView tvDescription = holder.itemView.findViewById(R.id.textViewDescripcion);
         tvDescription.setText(mascota.getDescripcion());
