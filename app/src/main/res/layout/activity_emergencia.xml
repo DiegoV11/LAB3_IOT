@@ -13,10 +13,10 @@
         android:text="Origen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintVertical_bias="0.149" />
 
     <TextView
         android:id="@+id/textView2"
@@ -74,11 +74,11 @@
 
     <EditText
         android:id="@+id/editTextOrigen"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Origen"
+        android:text="Av. Militar 2026, Lince 15046"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
