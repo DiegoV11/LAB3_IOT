@@ -25,4 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    public void irEmergencia(View view){
+        Intent intent = new Intent(MainActivity.this,EmergenciaActivity.class);
+        startActivity(intent);
+    }
+
+
 }

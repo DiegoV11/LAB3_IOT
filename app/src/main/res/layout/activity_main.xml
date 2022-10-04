@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:onClick="irEmergencia"
         android:text="Emergencia"
         app:layout_constraintEnd_toEndOf="@+id/btn_registro"
         app:layout_constraintStart_toStartOf="@+id/btn_registro"
